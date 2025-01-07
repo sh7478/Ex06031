@@ -27,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
     {
         count ++;
         textV.setText("This is click number: " + count);
-        textV.setTextColor(Color.YELLOW);
+        textV.setBackgroundColor(Color.WHITE);
+        textV.setTextColor(Color.BLACK);
+        if(count == 6)
+        {
+            textV.setText("Enough to click. Go to new start!");
+            textV.setBackgroundColor(Color.BLUE);
+            textV.setTextColor(Color.WHITE);
+            count = 0;
+        }
     }
 }
