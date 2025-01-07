@@ -24,6 +24,7 @@
             android:layout_weight="20" />
 
         <TextView
+            android:id="@+id/textV"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="20"
@@ -36,11 +37,13 @@
             android:layout_weight="20" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="20"
-            android:text="Button" />
+            android:onClick="clicked"
+            android:text="Click me"
+            android:textSize="10sp" />
 
         <Space
             android:layout_width="match_parent"
