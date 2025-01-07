@@ -27,14 +27,18 @@ public class MainActivity extends AppCompatActivity {
     {
         count ++;
         textV.setText("This is click number: " + count);
-        textV.setBackgroundColor(Color.WHITE);
-        textV.setTextColor(Color.BLACK);
-        if(count == 6)
+        if (count%7==0)
         {
-            textV.setText("Enough to click. Go to new start!");
-            textV.setBackgroundColor(Color.BLUE);
-            textV.setTextColor(Color.WHITE);
-            count = 0;
+            textV.setTextSize(50);
+            textV.setTextColor(Color.RED);
+            textV.setBackgroundColor(Color.YELLOW);
+            textV.setText("BOOM!");
+        }
+        else
+        {
+            textV.setTextSize(15);
+            textV.setTextColor(Color.BLACK);
+            textV.setBackgroundColor(Color.WHITE);
         }
     }
 }
